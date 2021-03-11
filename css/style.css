@@ -1,0 +1,97 @@
+:root{
+    --screen:#002244;
+    --operation_buttons:#0047AB;
+    --number_buttons:#007FFF;
+    --equal_button:#00CED1;
+    --other_buttons:#0047AB;
+    --frame:rgba(142, 164, 154, 0.3);
+    --font:'Roboto', sans-serif;
+}
+
+/* applying a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+body{
+     font-size: 16px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media (min-width: 768px) {
+    .main{
+        margin-left: 5rem;
+        margin-top: 5rem;
+    }
+}
+
+
+.main{
+    width: 30rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5 , 1fr);
+    gap: 0.2rem;
+    font-family: var(--font);
+    font-size: 2rem;
+    background-color: var(--frame);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.screen{
+    background-color: var(--screen);
+    width: 100%;
+    height: 7rem;
+    grid-column: 1 / 5;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 1rem;
+}
+.button{
+    width: 100%;
+    height: 100%;
+    background-color: var(--number_buttons);
+    margin: 0.1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.operacion_division{
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    background-color: var(--operation_buttons);
+}
+.operacion_multiplicacion{
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+    background-color: var(--operation_buttons);
+}
+.operacion_resta{
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+    background-color: var(--operation_buttons);
+}
+.operacion_suma{
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+    background-color: var(--operation_buttons);
+}
+.zero{
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+}
+.equal{
+    background-color: var(--equal_button);
+}
+.delete{
+    background-color: var(--other_buttons);
+}
