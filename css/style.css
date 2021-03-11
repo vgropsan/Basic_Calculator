@@ -3,7 +3,6 @@
     --operation_buttons:#0047AB;
     --number_buttons:#007FFF;
     --equal_button:#00CED1;
-    --other_buttons:#0047AB;
     --frame:rgba(142, 164, 154, 0.3);
     --font:'Roboto', sans-serif;
 }
@@ -26,7 +25,6 @@ body{
         margin-top: 5rem;
     }
 }
-
 
 .main{
     width: 30rem;
@@ -71,33 +69,15 @@ body{
 .button:active{
     background-color:#2E2787;
 }
-.operacion_division{
-    grid-row: 2 / 3;
-    grid-column: 4 / 5;
+
+.operation{
     background-color: var(--operation_buttons);
 }
-.operacion_multiplicacion{
-    grid-row: 3 / 4;
-    grid-column: 4 / 5;
-    background-color: var(--operation_buttons);
-}
-.operacion_resta{
-    grid-row: 4 / 5;
-    grid-column: 4 / 5;
-    background-color: var(--operation_buttons);
-}
-.operacion_suma{
-    grid-row: 5 / 6;
-    grid-column: 4 / 5;
-    background-color: var(--operation_buttons);
-}
+
 .zero{
     grid-row: 5 / 6;
     grid-column: 2 / 3;
 }
 .equal{
     background-color: var(--equal_button);
-}
-.delete{
-    background-color: var(--other_buttons);
 }
