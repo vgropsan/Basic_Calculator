@@ -65,6 +65,12 @@ body{
     flex-direction: column;
     text-align: center;
 }
+.button:hover{
+    background-color: var(--screen);
+}
+.button:active{
+    background-color:#2E2787;
+}
 .operacion_division{
     grid-row: 2 / 3;
     grid-column: 4 / 5;
